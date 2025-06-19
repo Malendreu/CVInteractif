@@ -1,1 +1,97 @@
+<!DOCTYPE html>More actions
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> CV Interactif</title>
 
+
+  body {
+    font-family: 'MS Gothic', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('Page Intro.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #E6E6FA;
+    max-width: 750px;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* en cas de fallback */
+  }
+
+  
+
+  .media {
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+
+   #game-box {
+ position: relative;
+  top: -30px;      /* monte la boîte */
+  left: 20px;     
+  transform: translate(0, 0); /* ou avec % */
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto 10px;
+  padding: 20px;
+  backdrop-filter: blur(6px);             /* 💡 flou ici */
+   -webkit-backdrop-filter: blur(6px);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0);
+  z-index: 3;
+}
+
+ #story p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.6;
+   text-align: center;
+    }
+    @media (min-width: 1000px) {
+      #game-box {
+        max-width: 1000px;
+      }
+
+      h1 {
+        max-width: 1000px;
+      }
+  #choices {
+  display: none;
+ }
+      .tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+  #game-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+  
+
+
+ <div id="game-box">
+  <div id="story"></div>
+  <div id="choices" class="choice"></div>
+</div>
+  
+
+</body>
+</html>
